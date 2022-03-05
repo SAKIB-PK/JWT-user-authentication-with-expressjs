@@ -1,5 +1,4 @@
 require("dotenv").config()
-require("dotenv").config()
 const express = require("express")
 const jwt = require('jsonwebtoken')
 
@@ -56,4 +55,6 @@ function authenticateToken(req,res,next){
         next()
     })
 }
+
+// Server Running based on port 
 app.listen(port,()=>console.log(`Server Running at ${port} port.` ))
